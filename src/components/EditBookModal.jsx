@@ -7,7 +7,7 @@ import { useSelector } from "react-redux"
 function EditBookModal({ setEditModal, book, index }) {
     const booksDetails = useSelector((state) => state.books.value)
     const [title, setTitle] = useState(book.title)
-    const [author, setAuthor] = useState(book.title);
+    const [author, setAuthor] = useState(book.author?book.author:book.title);
     const [description, setDescription] = useState(book.body)
 
     const dispatch = useDispatch(books);

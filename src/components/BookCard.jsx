@@ -33,7 +33,7 @@ function BookCard({ book,index }) {
                 <div className="font-semibold text-xl mb-2">Name:{book.title.substring(0, 25)}</div>
                 <div>
                     <p className="text-gray-700 text-lg font-semibold">
-                        Author:<span className="text-base font-normal"> {book.title}</span>
+                        Author:<span className="text-base font-normal"> {book.author?book.author:book.title}</span>
 
                     </p>
                 </div>
